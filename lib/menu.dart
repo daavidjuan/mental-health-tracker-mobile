@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
-  final String npm = '2306221913'; // NPM
+  final String npm = '2306221913';              // NPM
   final String name = 'David Juan Ananda'; // Nama
-  final String className = 'PBP B'; // Kelas
-  final List<ItemHomepage> items = [
-    ItemHomepage("Lihat Mood", Icons.mood),
-    ItemHomepage("Tambah Mood", Icons.add),
-    ItemHomepage("Logout", Icons.logout),
-  ];
+  final String className = 'PBP B';             // Kelas
   MyHomePage({super.key});
 
   @override
@@ -88,8 +83,17 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
     );
-  }
+  
 }
+
+  final List<ItemHomepage> items = [
+         ItemHomepage("Lihat Mood", Icons.mood),
+         ItemHomepage("Tambah Mood", Icons.add),
+         ItemHomepage("Logout", Icons.logout),
+     ];
+
+}
+
 
 class InfoCard extends StatelessWidget {
   // Kartu informasi yang menampilkan title dan content.
@@ -125,10 +129,10 @@ class InfoCard extends StatelessWidget {
 }
 
 class ItemHomepage {
-    final String name;
-    final IconData icon;
+     final String name;
+     final IconData icon;
 
-    ItemHomepage(this.name, this.icon);
+     ItemHomepage(this.name, this.icon);
 }
 
 class ItemCard extends StatelessWidget {
