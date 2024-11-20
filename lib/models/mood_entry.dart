@@ -12,7 +12,7 @@ class MoodEntry {
     String model;
     String pk;
     Fields fields;
-
+    
     MoodEntry({
         required this.model,
         required this.pk,
